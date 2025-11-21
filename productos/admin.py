@@ -9,4 +9,4 @@ from .models import Producto
 class ProductoAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'precio', 'stock', 'fecha_creacion')
     search_fields =('nombre', 'descripcion')
-    list_filter =('fecha_creacion')
+    list_filter =('fecha_creacion',)
